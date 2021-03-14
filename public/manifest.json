@@ -1,0 +1,10 @@
+{
+  "name": "Ashikhmin Evgeny Curriculum Vitae (resume)",
+  "short_name": "EA CV",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#DFDFE6",
+  "orientation": "landscape",
+  "description": "EA promo CV site."
+}
