@@ -41,7 +41,7 @@ const Main: React.FC = () => {
                     // @ts-ignore
                     onMouseMove={e => setTrail({ xy: [e.clientX, e.clientY] })}
                 >
-                    {trail.map((props, index) => (
+                    {trail.map((props: any, index) => (
                         <animated.div
                             key={index}
                             style={{ transform: props?.xy?.interpolate(trans) }}
