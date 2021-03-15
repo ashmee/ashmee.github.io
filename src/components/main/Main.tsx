@@ -18,11 +18,11 @@ const Main: React.FC = () => {
         <main className={"main"}>
             <Spring delay={3} from={{ opacity: 0 }} to={{ opacity: 1 }}>
                 {props => (
-                    <>
+                    <div className={"hello"}>
                         <div style={props}>👋 Hey there!</div>
                         <div>I'm Eugene, frontend developer from Russia</div>
                         <div>Site will be launched soon! Stay tuned!</div>
-                    </>
+                    </div>
                 )}
             </Spring>
             <div className={"circle"}>
