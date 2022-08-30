@@ -45,7 +45,7 @@ module.exports = {
     },
     output: {
         filename: "[name].[contenthash].js",
-        path: path.resolve(__dirname, "./dist"),
+        path: path.resolve(__dirname, "./docs"),
         clean: true,
     },
     optimization: {
@@ -59,7 +59,7 @@ module.exports = {
             },
         },
     },
-    devtool: isProductionMode ? "false" : "inline-source-map",
+    devtool: isProductionMode ? "" : "inline-source-map",
     devServer: {
         static: {
             directory: path.join(__dirname, "./dist"),
