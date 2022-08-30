@@ -1,8 +1,7 @@
-.cache
 package.json
 package-lock.json
 public
-dist
+docs
 node_modules
 tsconfig.json
 *.common.ts

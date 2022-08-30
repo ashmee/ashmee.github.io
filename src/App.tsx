@@ -1,13 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import Main from "./components/main/Main"
 import "./App.scss"
+import Header from "./components/header/Header"
+import { NavigationT } from "./types"
 
 function App() {
+    const [currentNav, setCurrentNav] = useState<NavigationT>("main")
+
     return (
         <div className={"app"}>
-            {/*<Header />*/}
-            <Main />
-            {/*<Footer />*/}
+            <Header nav={currentNav} changeNav={setCurrentNav} />
+            <Main nav={currentNav} />
         </div>
     )
 }

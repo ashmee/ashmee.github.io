@@ -12,8 +12,6 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: "index.html",
-
-
             template: path.join(__dirname, "./public/index.html"),
         }),
     ],
@@ -47,7 +45,7 @@ module.exports = {
     },
     output: {
         filename: "[name].[contenthash].js",
-        path: path.resolve(__dirname, "./dist"),
+        path: path.resolve(__dirname, "./docs"),
         clean: true,
     },
     optimization: {
@@ -63,8 +61,11 @@ module.exports = {
     },
     devtool: isProductionMode ? "false" : "inline-source-map",
     devServer: {
-        contentBase: path.join(__dirname, "./dist"),
+        static: {
+            directory: path.join(__dirname, "./docs"),
+        },
+        hot: true,
         compress: true,
-        port: 3000,
+        port: 9000,
     },
 }
