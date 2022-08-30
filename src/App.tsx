@@ -5,7 +5,7 @@ import Header from "./components/header/Header"
 import { NavigationT } from "./types"
 
 function App() {
-    const [currentNav, setCurrentNav] = useState<NavigationT>("experience")
+    const [currentNav, setCurrentNav] = useState<NavigationT>("main")
 
     return (
         <div className={"app"}>
