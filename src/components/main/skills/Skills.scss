@@ -1,0 +1,31 @@
+.skillTitle {
+  align-self: flex-start;
+  font-weight: 900;
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  color: #05091e;
+
+  @media (min-width: 750px) {
+    font-size: 3em;
+  }
+}
+
+.skillNames {
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  gap: .75rem;
+  flex-wrap: wrap;
+  @media (max-width: 750px) {
+    margin-bottom: .5rem;
+  }
+}
+
+.skillName {
+  display: flex;
+}
+
+.highlight {
+  font-weight: bold;
+}

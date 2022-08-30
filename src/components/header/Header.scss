@@ -1,0 +1,147 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  z-index: 2;
+  gap: .5rem;
+  height: 50px;
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logolink {
+    display: flex;
+    color: #05091e;
+    text-decoration: none;
+
+    &:focus {
+      border: 2px currentColor solid;
+    }
+  }
+
+  button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .link {
+    color: #90aab7;
+    display: block;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: .3s;
+
+    &:focus,
+    &:hover {
+      color: #46b4ff;
+    }
+  }
+
+  .monogram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25em;
+    height: 2.25em;
+    margin-right: 0.5rem;
+    color: #05091e;
+    font-weight: 700;
+    letter-spacing: -0.125rem;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-sizing: content-box;
+
+    &:focus,
+    &:hover {
+      border-color: #46b4ff;
+    }
+  }
+
+  .social {
+    display: flex;
+    margin-left: auto;
+
+    + .social {
+      margin-left: 0.75rem;
+    }
+  }
+
+  .socialicon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #90aab7;
+    transition: fill linear 150ms;
+
+    &:hover {
+      fill: #46b4ff;
+    }
+  }
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    height: auto;
+    gap: .75em;
+
+    .links {
+      gap: .75em;
+    }
+    .monogram {
+      width: 2.5em;
+      height: 2.5em;
+      font-size: 1.25em;
+    }
+
+    .link {
+      font-size: 1.5em;
+    }
+
+    .socialicon {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .links {
+      gap: .4em;
+    }
+    .monogram {
+      width: 2.4em;
+      height: 2.4em;
+      font-size: 1.2em;
+      margin-right: 0.25rem;
+    }
+
+    .link {
+      font-size: 1.4em;
+    }
+
+    .socialicon {
+      width: 2.4em;
+      height: 2.4em;
+    }
+  }
+
+  .logolink-active {
+    border-color: #46b4ff;
+  }
+
+  .link-active {
+    border-bottom: 1px solid #46b4ff;
+    transition: 0.7s;
+  }
+}
+

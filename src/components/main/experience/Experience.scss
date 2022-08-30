@@ -1,0 +1,134 @@
+.experiencesWrapper {
+
+}
+
+.experienceWrapper {
+  display: flex;
+  align-self: flex-start;
+  padding-left: 15%;
+  max-width: 80%;
+  margin-bottom: 1.25rem;
+
+  @media (max-width: 750px) {
+    padding-left: 0;
+    max-width: 100%;
+    flex-direction: column;
+    align-self: center;
+  }
+}
+
+.experienceDate {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
+  width: 180px;
+  max-width: 180px;
+  color: #90aab7;
+
+  .dash {
+    align-self: flex-end;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 750px) {
+    flex-direction: row-reverse;
+    width: 320px;
+    max-width: 320px;
+    justify-content: space-around;
+    padding-bottom: .5rem;
+
+    .dash {
+      display: none;
+    }
+  }
+}
+
+.experienceInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 80%;
+  border-left: 2px solid #46b4ff;
+
+  @media (max-width: 750px) {
+    width: 100%;
+    max-width: 100%;
+    border-left: none;
+    border-top: 2px solid #46b4ff;
+  }
+
+  .companyInfo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #05091e;
+
+    .company {
+      font-size: 1.5rem;
+    }
+
+    .position {
+      font-size: 1.25rem;
+      border-left: 2px solid #46b4ff;
+      padding-left: 10px;
+    }
+
+    a {
+      color: #46b4ff;
+    }
+
+    .link {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .linkicon {
+      display: block;
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: #46b4ff;
+      transition: fill linear 150ms;
+
+      &:hover {
+        fill: #90aab7;
+      }
+    }
+
+    @media (max-width: 750px) {
+      gap: 5px;
+      flex-direction: column;
+      padding-top: 5px;
+
+      .position {
+        border: none;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    li:before {
+      content: "\232A";
+      padding-right: 5px;
+    }
+  }
+}
+
+.technology {
+  display: inline-flex;
+  border-radius: 10%;
+  padding: 1px 3px;
+  border: 1px solid #05091e;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
