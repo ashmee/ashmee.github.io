@@ -14,7 +14,11 @@
     "url": "git+https://github.com/ashmee/ashmee.github.io.git"
   },
   "keywords": [
-    "promo-page"
+    "promo-page",
+    "cv",
+    "resume",
+    "react query",
+    "typescript"
   ],
   "author": "ashmee",
   "license": "ISC",
@@ -35,6 +39,7 @@
     "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",

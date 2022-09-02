@@ -24,6 +24,7 @@ export const Header = ({ nav, changeNav }: HeaderProps) => {
                         className={`monogram logolink ${nav === "main" ? "logolink-active" : ""}`}
                         id={"main"}
                         onClick={onClickHandler}
+                        title={"Main page"}
                     >
                         EA
                     </button>
@@ -31,6 +32,7 @@ export const Header = ({ nav, changeNav }: HeaderProps) => {
                         className={`link ${nav === "skills" ? "link-active" : ""}`}
                         id={"skills"}
                         onClick={onClickHandler}
+                        title={"Skills"}
                     >
                         Skills
                     </button>
@@ -38,6 +40,7 @@ export const Header = ({ nav, changeNav }: HeaderProps) => {
                         className={`link ${nav === "experience" ? "link-active" : ""}`}
                         id={"experience"}
                         onClick={onClickHandler}
+                        title={"Experience"}
                     >
                         Experience
                     </button>

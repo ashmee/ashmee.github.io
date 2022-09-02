@@ -1,5 +1,6 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const CopyPlugin = require("copy-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 const isProductionMode = process.env.NODE_ENV === "production"
@@ -13,6 +14,15 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: path.join(__dirname, "./public/index.html"),
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, "public/images"),
+                    to: ".",
+                }
+
+            ],
         }),
     ],
     module: {

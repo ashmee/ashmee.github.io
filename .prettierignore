@@ -4,4 +4,3 @@ public
 docs
 node_modules
 tsconfig.json
-*.common.ts

@@ -114,3 +114,12 @@
     }
   }
   }
+
+.hide {
+  .hooks-main {
+    display: none;
+  }
+  svg {
+    display: none;
+  }
+}

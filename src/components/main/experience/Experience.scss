@@ -41,6 +41,10 @@
       display: none;
     }
   }
+
+  div:first-letter {
+    text-transform: uppercase;
+  }
 }
 
 .experienceInfo {
@@ -115,6 +119,10 @@
     li {
       padding-left: 1em;
       text-indent: -1em;
+    }
+
+    li:first-letter {
+      text-transform: uppercase;
     }
 
     li:before {

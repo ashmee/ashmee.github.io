@@ -13,6 +13,7 @@ type MainProps = {
 const fast = { tension: 1200, friction: 40 }
 const slow = { mass: 10, tension: 190, friction: 50 }
 const trans = (x: number, y: number) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`
+
 export const Main = ({ nav }: MainProps) => {
     const [trail, api] = useTrail(3, i => ({
         xy: [0, 0],
@@ -25,7 +26,7 @@ export const Main = ({ nav }: MainProps) => {
     }
 
     return (
-        <main className={"main"}>
+        <main className={`main ${nav === "experience" ? "hide" : ""}`}>
             <svg style={{ position: "absolute", width: 0, height: 0 }}>
                 <filter id="allowemptyinput">
                     <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="35" />
