@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CopyPlugin = require("copy-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-
 module.exports = (env: any, argv: { mode: string }) => {
     const isProductionMode = argv.mode === "production"
 
@@ -25,15 +24,14 @@ module.exports = (env: any, argv: { mode: string }) => {
                     removeScriptTypeAttributes: true,
                     removeStyleLinkTypeAttributes: true,
                     useShortDoctype: true,
-                }
+                },
             }),
             new CopyPlugin({
                 patterns: [
                     {
                         from: path.resolve(__dirname, "public/images"),
                         to: ".",
-                    }
-
+                    },
                 ],
             }),
         ],
@@ -81,7 +79,7 @@ module.exports = (env: any, argv: { mode: string }) => {
                 },
             },
         },
-        devtool: isProductionMode ? 'eval' : 'source-map' ,
+        devtool: isProductionMode ? "eval" : "source-map",
         devServer: {
             static: {
                 directory: path.join(__dirname, "./docs"),

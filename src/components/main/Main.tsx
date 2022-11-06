@@ -20,13 +20,17 @@ export const Main = ({ nav }: MainProps) => {
         config: i === 0 ? fast : slow,
     }))
     const [ref, { left, top }] = useMeasure()
-
+    const isSafari =
+        /constructor/i.test(window?.HTMLElement as unknown as string) ||
+        (!!navigator.userAgent.match(/safari/i) &&
+            !navigator.userAgent.match(/chrome/i) &&
+            typeof document.body.style.webkitFilter !== "undefined" )
     const handleMouseMove = (e: { clientX: number; clientY: number }) => {
         api.start({ xy: [e.clientX - left, e.clientY - top] })
     }
 
     return (
-        <main className={`main ${nav === "experience" ? "hide" : ""}`}>
+        <main className={`main ${nav === "experience" || isSafari ? "hide" : ""}`}>
             <svg style={{ position: "absolute", width: 0, height: 0 }}>
                 <filter id="allowemptyinput">
                     <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="35" />

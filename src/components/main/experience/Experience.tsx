@@ -10,7 +10,7 @@ export const Experience = () => {
                 <div key={item.company} className={"experienceWrapper"}>
                     <div className={"experienceDate"}>
                         <div>{item.dateEnd}</div>
-                        <div className={"dash"}>{"⮌"}</div>
+                        <div className={"dash"}>{"—"}</div>
                         <div>{item.dateStart}</div>
                     </div>
                     <div className={"experienceInfo"}>
