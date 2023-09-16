@@ -9,11 +9,12 @@ export function MainInfo() {
             <ul>
                 <li>I am engaged in the development of user interfaces and applications</li>
                 <li>
-                    Frontend developer with 3 years of experience in web development, with
+                    Frontend developer with 4 years of experience in web development, with
                     an emphasis on React
                 </li>
-                <li>Working in IT sphere for more than 7 years</li>
+                <li>Working in IT sphere for more than 8 years</li>
                 <li>Have experience with cross-browser, W3C valid and semantic markup</li>
+                <li>Developed services using a micro-frontend architecture</li>
                 <li>Experience with SCRUM agile methodology</li>
                 <li>
                     Basic experience in troubleshooting, performance optimization, and bug fixing

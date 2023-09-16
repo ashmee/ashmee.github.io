@@ -24,7 +24,7 @@ export const Main = ({ nav }: MainProps) => {
         /constructor/i.test(window?.HTMLElement as unknown as string) ||
         (!!navigator.userAgent.match(/safari/i) &&
             !navigator.userAgent.match(/chrome/i) &&
-            typeof document.body.style.webkitFilter !== "undefined" )
+            typeof document.body.style.webkitFilter !== "undefined")
     const handleMouseMove = (e: { clientX: number; clientY: number }) => {
         api.start({ xy: [e.clientX - left, e.clientY - top] })
     }
