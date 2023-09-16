@@ -5,8 +5,9 @@ export const SkillsData: SkillsDataT = {
         { name: "JavaScript (ES6+)", highlight: true },
         { name: "TypeScript", highlight: true },
         { name: "ReactJS", highlight: true },
-        { name: "CSS" },
+        { name: "RxJS" },
         { name: "Redux" },
+        { name: "CSS" },
         { name: "styled-components" },
         { name: "GraphQL" },
         { name: "Apollo" },
@@ -35,11 +36,35 @@ export const SkillsData: SkillsDataT = {
 
 export const ExperienceData: ExperienceDataT[] = [
     {
+        company: "Tochka",
+        companyLink: "https://tochka.com/",
+        position: "Frontend developer",
+        dateStart: "december 2022",
+        dateEnd: "current time",
+        responsibilities: [
+            "Development of interfaces for bank compliance functionality",
+            "Setting up A/B tests to test the best solutions for the problems we found in the research",
+            "End-to-end tests",
+        ],
+        technologies: [
+            "TypeScript",
+            "React",
+            "RxJS",
+            "JavaScript",
+            "emotion",
+            "sentry",
+            "Figma",
+            "TeamCity",
+            "BitBucket",
+            "Git",
+        ],
+    },
+    {
         company: "INNOTECH",
         companyLink: "https://inno.tech/",
-        position: "Frontend developer",
+        position: "Frontend developer",
         dateStart: "april 2022",
-        dateEnd: "current time",
+        dateEnd: "december 2022",
         responsibilities: [
             "Product support and enhancement (forms, bugs, accessibility)",
             "Transfer of the current product to microservice interaction",
@@ -62,7 +87,7 @@ export const ExperienceData: ExperienceDataT[] = [
     {
         company: "EPAM Systems Inc.",
         companyLink: "https://www.epam.com/",
-        position: "Frontend developer",
+        position: "Frontend developer",
         dateStart: "june 2021",
         dateEnd: "april 2022",
         responsibilities: [
@@ -84,7 +109,7 @@ export const ExperienceData: ExperienceDataT[] = [
     {
         company: "LLC Gazprom Neft – Digital Solutions",
         companyLink: "https://www.gazprom-neft.ru/",
-        position: "Frontend developer",
+        position: "Frontend developer",
         dateStart: "january 2021",
         dateEnd: "june 2021",
         responsibilities: [
