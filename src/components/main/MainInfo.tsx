@@ -1,4 +1,3 @@
-import React from "react"
 import "./Main.scss"
 
 export function MainInfo() {
@@ -9,7 +8,7 @@ export function MainInfo() {
             <ul>
                 <li>I am engaged in the development of user interfaces and applications</li>
                 <li>
-                    Frontend developer with 4 years of experience in web development, with
+                    Frontend developer with 4+ years of experience in web development, with
                     an emphasis on React
                 </li>
                 <li>Working in IT sphere for more than 8 years</li>

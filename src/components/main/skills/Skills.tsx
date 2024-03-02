@@ -1,13 +1,13 @@
-import React from "react"
+import { Fragment } from "react"
 import "../Main.scss"
 import "./Skills.scss"
 import { SkillsData } from "../../../data"
 
 export const Skills = () => {
     return (
-        <>
+        <div className={"skillsWrapper"}>
             {Object.keys(SkillsData).map(key => (
-                <React.Fragment key={key}>
+                <Fragment key={key}>
                     <div className={"skillTitle"}>{key}</div>
                     <div className={"skillNames"}>
                         {SkillsData[key].map(skill => (
@@ -19,9 +19,9 @@ export const Skills = () => {
                             </div>
                         ))}
                     </div>
-                </React.Fragment>
+                </Fragment>
             ))}
-        </>
+        </div>
     )
 }
 

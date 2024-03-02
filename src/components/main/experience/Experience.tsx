@@ -1,4 +1,3 @@
-import React from "react"
 import "../Main.scss"
 import "./Experience.scss"
 import { ExperienceData } from "../../../data"

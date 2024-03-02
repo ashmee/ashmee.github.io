@@ -1,14 +1,23 @@
 .experiencesWrapper {
-
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem 2rem 2rem;
+  width: 100%;
+  @media (max-width: 750px) {
+    padding: 0;
+  }
+  @media (min-width: 1023px) {
+    padding: 2rem 10rem 2rem 8rem;
+  }
 }
 
 .experienceWrapper {
   display: flex;
   align-self: flex-start;
-  padding-left: 15%;
   margin-bottom: 1.25rem;
+  width: 100%;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1023px) {
     padding-left: 0;
     max-width: 100%;
     flex-direction: column;
@@ -23,13 +32,14 @@
   width: 180px;
   max-width: 180px;
   color: #90aab7;
+  flex-shrink: 0;
 
   .dash {
     align-self: flex-end;
     font-size: 1.2rem;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 1023px) {
     flex-direction: row-reverse;
     width: 320px;
     max-width: 320px;
@@ -49,11 +59,10 @@
   flex-direction: column;
   padding: 0 1rem 1rem;
   flex-wrap: wrap;
-  width: 80%;
-  max-width: 80%;
   border-left: 2px solid #46b4ff;
+  flex-grow: 1;
 
-  @media (max-width: 750px) {
+  @media (max-width: 1023px) {
     width: 100%;
     max-width: 100%;
     border-left: none;
@@ -65,15 +74,24 @@
     gap: 10px;
     align-items: center;
     color: #05091e;
+    justify-content: space-between;
 
     .company {
       font-size: 1.5rem;
+    
     }
 
     .companyWrapper {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      gap: 10px;
       font-size: 1.25rem;
       border-right: 2px solid #46b4ff;
       padding-right: 10px;
+      @media (max-width: 750px) {
+        flex-direction: column;
+      }
     }
 
     a {
@@ -83,6 +101,7 @@
     .link {
       display: flex;
       align-items: flex-end;
+      white-space: pre;
     }
 
     .linkicon {
@@ -97,7 +116,7 @@
       }
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 1023px) {
       gap: 5px;
       flex-direction: column;
       padding-top: 5px;

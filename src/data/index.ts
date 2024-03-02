@@ -43,7 +43,7 @@ export const ExperienceData: ExperienceDataT[] = [
         dateEnd: "current time",
         responsibilities: [
             "Development of interfaces for bank compliance functionality",
-            "Setting up A/B tests to test the best solutions for the problems we found in the research",
+            "Setting up A/B tests to test the best solutions for the problems we found in the research",
             "End-to-end tests",
         ],
         technologies: [
@@ -53,6 +53,7 @@ export const ExperienceData: ExperienceDataT[] = [
             "JavaScript",
             "emotion",
             "sentry",
+            "Playwright",
             "Figma",
             "TeamCity",
             "BitBucket",
@@ -69,7 +70,7 @@ export const ExperienceData: ExperienceDataT[] = [
             "Product support and enhancement (forms, bugs, accessibility)",
             "Transfer of the current product to microservice interaction",
             "Migration of product functionality from Seibel CRM to microfrontend architecture",
-            "Mentoring for a junior developer\n",
+            "Mentoring for a junior developer",
         ],
         technologies: [
             "TypeScript",
@@ -107,7 +108,7 @@ export const ExperienceData: ExperienceDataT[] = [
         ],
     },
     {
-        company: "LLC Gazprom Neft – Digital Solutions",
+        company: "LLC Gazprom Neft – Digital Solutions",
         companyLink: "https://www.gazprom-neft.ru/",
         position: "Frontend developer",
         dateStart: "january 2021",

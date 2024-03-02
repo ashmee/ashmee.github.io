@@ -1,4 +1,3 @@
-import React from "react"
 import { animated, useTrail } from "@react-spring/web"
 import useMeasure from "react-use-measure"
 

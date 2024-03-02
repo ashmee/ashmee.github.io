@@ -10,3 +10,4 @@ typings/
 .cache
 .nuxt
 dist
+.DS_Store
